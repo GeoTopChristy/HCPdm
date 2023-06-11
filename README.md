@@ -136,16 +136,17 @@ and the list now is much more convincing due to the mutual check. We are also gr
 in the first Arxiv version of [1]. The computations throughout this paper are performed on a cluster of server of PARATERA, engrid12, line priv para (CPU:Intel(R) Xeon(R) Gold 5218 16 Core v5@2.3GHz).
 
 ## Citation
-@misc{vonwerra2022trl,？？\
+@misc{GeoTopChrist2023HCPdmvonwerra2022trl,\
   author = {Jiming Ma and Fangting Zheng},\
   title = {HCPdm: enumeration of hyperbolic Coxeter d-polytopes with m facets},\
   year = {2023},\
   publisher = {GitHub},\
   journal = {GitHub repository},\
-  howpublished = {\url{https://github.com/lvwerra/trl}}？？
+  howpublished = {\url{https://github.com/GeoTopChristy/HCPdm}}
 }
 
 
 This updating page is created and maintained by [Fangting ZHENG](https://www.xjtlu.edu.cn/en/study/departments/school-of-mathematics-and-physics/pure-mathematics/department-staff/academic-staff/staff/fangting-zheng). Suggestions, collaboration or other comments are very welcome
+
 
 
