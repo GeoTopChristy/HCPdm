@@ -1,6 +1,6 @@
 ![](figures/head.png)
 
-# HCPdm
+# HCPdm: Enumerating hyperbolic Coxeter d-polytopes with m facets
 
 ## What is it?
 
@@ -82,7 +82,7 @@ And the corresponding Coxeter diagrams are
 <div align="center"><img src="figures/Coxeters.png" alt="drawing" width="400"/></div>
 
 ### Remark: 
-a)	Additional intersection restrictions, i.e. three saving conditions, are used for the **chcp59** case in order to accomplish the calculation in reasonable time, and three libraries (\mathcal{P}<sub>3</sub>,\mathcal{P}<sub>4</sub>, $\mathcal{D}$<sub>4</sub>) are pre-constructed and saved in **polytopeDATA** as well. See Section 6 in [2] for more details. And the connectivity of diagrams, which do not really make different in the calculation in the cases of **chcp48** and **chcp59**, counts essentially in the **hcp47** case. 
+a)	Additional intersection restrictions, i.e. three saving conditions, are used for the **chcp59** case in order to accomplish the calculation in reasonable time, and three libraries ($\mathcal{P}$<sub>3</sub>, $\mathcal{P}$<sub>4</sub>, $\mathcal{D}$<sub>4</sub>) are pre-constructed and saved in **polytopeDATA** as well. See Section 6 in [2] for more details. And the connectivity of diagrams, which do not really make different in the calculation in the cases of **chcp48** and **chcp59**, counts essentially in the **hcp47** case. 
 
 b)	The **basis approach** and **non-basis approach** are indicated by the variable flag in the code. The flag=2 and flag=1 correspond to basis and non-basis one, respectively. For those polytopes that do not admit prism ends, these two values of flag lead to the same result.
 
@@ -136,7 +136,7 @@ and the list now is much more convincing due to the mutual check. We are also gr
 in the first Arxiv version of [1]. The computations throughout this paper are performed on a cluster of server of PARATERA, engrid12, line priv para (CPU:Intel(R) Xeon(R) Gold 5218 16 Core v5@2.3GHz).
 
 ## Citation
-@misc{GeoTopChrist2023HCPdmvonwerra2022trl,\
+@misc{GeoTopChrist2023HCPdm,\
   author = {Jiming Ma and Fangting Zheng},\
   title = {HCPdm: enumeration of hyperbolic Coxeter d-polytopes with m facets},\
   year = {2023},\
