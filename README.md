@@ -1,4 +1,4 @@
-![](figures/head.png)
+![](figures/headN.png)
 
 # HCPdm: Clssification of hyperbolic Coxeter d-polytopes with m facets
 
