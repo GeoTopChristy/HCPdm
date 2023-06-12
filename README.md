@@ -1,4 +1,4 @@
-![](figures/headN.png)
+![](figures/head.png)
 
 # HCPdm: Clssification of hyperbolic Coxeter d-polytopes with m facets
 
@@ -6,14 +6,13 @@
 
 This project **HCPdm** is for classifying **d**-dimensional **H**yperbolic **C**oxeter **P**olytopes with **m** facets. 
 So far, we have completed the computation about compact hyperbolic Coxeter 4-polytopes/5-polytopes with 8/9 facets 
-(realized by module chcp48 and chcp59, respectively) and all the hyperbolic Coxeter 4-polytopes with 7 facets 
-(realized by module hcp47). The main results are as follows:
+(realized by module chcp48 and chcp59, respectively). <!--and all the hyperbolic Coxeter 4-polytopes with 7 facets (realized by module hcp47)-->
+The main results are as follows:
 
 >There are exactly **348** compact hyperbolic Coxeter 4-polytopes with 8 facets.[1]
 > 
 >There are exactly **51** compact hyperbolic Coxeter 5-polytopes with 9 facets.[2]
-> 
->There are exactly **275** hyperbolic Coxeter 4-polytopes with 7 facets.[3]
+<!--There are exactly **275** hyperbolic Coxeter 4-polytopes with 7 facets.[3]-->
 
 ## How it works
 
@@ -82,7 +81,7 @@ And the corresponding Coxeter diagrams are
 <div align="center"><img src="figures/Coxeters.png" alt="drawing" width="400"/></div>
 
 ### Remark: 
-a)	Additional intersection restrictions, i.e. three saving conditions, are used for the **chcp59** case in order to accomplish the calculation in reasonable time, and three libraries ($\mathcal{P}$<sub>3</sub>, $\mathcal{P}$<sub>4</sub>, $\mathcal{D}$<sub>4</sub>) are pre-constructed and saved in **polytopeDATA** as well. See Section 6 in [2] for more details. And the connectivity of diagrams, which do not really make different in the calculation in the cases of **chcp48** and **chcp59**, counts essentially in the **hcp47** case. 
+a)	Additional intersection restrictions, i.e. three saving conditions, are used for the **chcp59** case in order to accomplish the calculation in reasonable time, and three libraries ($\mathcal{P}$<sub>3</sub>, $\mathcal{P}$<sub>4</sub>, $\mathcal{D}$<sub>4</sub>) are pre-constructed and saved in **polytopeDATA** as well. See Section 6 in [2] for more details. <!--And the connectivity of diagrams, which do not really make different in the calculation in the cases of **chcp48** and **chcp59**, counts essentially in the **hcp47** case. -->
 
 b)	The **basis approach** and **non-basis approach** are indicated by the variable flag in the code. The flag=2 and flag=1 correspond to basis and non-basis one, respectively. For those polytopes that do not admit prism ends, these two values of flag lead to the same result.
 
@@ -122,11 +121,10 @@ if __name__ == '__main__':
 
 ## References
 The implementation follows the structure introduced in our papers as follows
->[1] Compact hyperbolic Coxeter 4-polytopes with eight facets arxiv.org/2201.00154.
+>[1] Compact hyperbolic Coxeter 4-polytopes with eight facets [arxiv.org/2201.00154.](https://arxiv.org/pdf/2201.00154.pdf)
 > 
->[2] Compact hyperbolic Coxeter 5-polytopes with nine facets, arxiv.org/2203.16049.
-> 
->[3] Hyperbolic Coxeter 4-polytopes with seven facets. Experiments are finished and the paper is coming soon.
+>[2] Compact hyperbolic Coxeter 5-polytopes with nine facets, [arxiv.org/2203.16049.](https://arxiv.org/pdf/2203.16049.pdf)
+<!--[3] Hyperbolic Coxeter 4-polytopes with seven facets. Experiments are finished and the paper is coming soon.-->
 
 ## Acknowledgment
 
