@@ -97,7 +97,7 @@ d)	This approach has been Python-programmed on a PARATERA server cluster.
 
 ### 4. Signature obstruction
 
-This approach has been Mathematica-programmed. We provide in the folder SigPart the notebook for P_17 in the family of HCP48, P_322 in the family of HCP59 as examples. The strategies are more complicated in the HCP48 case for the amount of SEILper matrices even reach 325,957 over some polytope. See Section 6 in corresponding paper for details.
+This approach has been Mathematica-programmed. We provide in the folder SigPart the notebook for <!--P_17 in the family of HCP48, -->P_322 in the family of **HCP59** as an example. The strategies are more complicated in the **HCP48** case for the amount of SEILper matrices even reach 325,957 over some polytope. See Section 6 in corresponding paper for details.
 
 # How to use
 run the main.py in pyFile.
