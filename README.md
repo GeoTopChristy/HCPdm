@@ -50,7 +50,7 @@ In the directories of **./output/P9_322** and **./output/P8_17**, the files **P9
 
 <sub>*</sub> see Remark c) for the explanation about rounds.
 
-## 2. Library preparation:
+### 2. Library preparation:
 
 We prepare some libraries for the step 3 of refined pasting. The libraries need are stated in corresponding papers. For example, the libraries need for **chcp59** are
 
@@ -60,7 +60,7 @@ We prepare some libraries for the step 3 of refined pasting. The libraries need 
 All the possibly needed libraries are generated beforehand and saved in the folder **ToolPolytope**.
 And we just need to import them for each specific task.
 
-## 3. Refined pasting
+### 3. Refined pasting
 
 This is the most complex part. 
 We use the **block-pasting algorithm** to generate different parts of a potential matrix (i.e., over a chunk) simultaneously 
@@ -85,7 +85,7 @@ And the corresponding Coxeter diagrams are
 
 <div align="center"><img src="figures/Coxeters.png" alt="drawing" width="400"/></div>
 
-### Remark: 
+#### Remark: 
 a)	Additional intersection restrictions, i.e. three saving conditions, are used for the **chcp59** case in order to accomplish the calculation in reasonable time, and three libraries ($\mathcal{P}$<sub>3</sub>, $\mathcal{P}$<sub>4</sub>, $\mathcal{D}$<sub>4</sub>) are pre-constructed and saved in **polytopeDATA** as well. See Section 6 in [2] for more details. <!--And the connectivity of diagrams, which do not really make different in the calculation in the cases of **chcp48** and **chcp59**, counts essentially in the **hcp47** case. -->
 
 b)	The **basis approach** and **non-basis approach** are indicated by the variable flag in the code. The flag=2 and flag=1 correspond to basis and non-basis one, respectively. For those polytopes that do not admit prism ends, these two values of flag lead to the same result.
@@ -95,7 +95,7 @@ For example, in the directories of **./output/P8_17**, the results of the 2 roun
 
 d)	This approach has been Python-programmed on a PARATERA server cluster.
 
-## 4. Signature obstruction
+### 4. Signature obstruction
 
 This approach has been Mathematica-programmed. We provide in the folder SigPart the notebook for P_17 in the family of HCP48, P_322 in the family of HCP59 as examples. The strategies are more complicated in the HCP48 case for the amount of SEILper matrices even reach 325,957 over some polytope. See Section 6 in corresponding paper for details.
 
@@ -124,21 +124,21 @@ if __name__ == '__main__':
     chcp59.run59(num,flag)
 ```
 
-## References
+### References
 The implementation follows the structure introduced in our papers as follows
 >[1] Compact hyperbolic Coxeter 4-polytopes with eight facets [arxiv.org/2201.00154.](https://arxiv.org/pdf/2201.00154.pdf)
 > 
 >[2] Compact hyperbolic Coxeter 5-polytopes with nine facets, [arxiv.org/2203.16049.](https://arxiv.org/pdf/2203.16049.pdf)
 <!--[3] Hyperbolic Coxeter 4-polytopes with seven facets. Experiments are finished and the paper is coming soon.-->
 
-## Acknowledgment
+### Acknowledgment
 
 We would like to thank Amanda Burcroff for communicating with us about her result
 after we posted our preprint [1]. She pointed out several confusing drawing typos in the first arXiv version of [1].The computations is pretty delicate and complex,
 and the list now is much more convincing due to the mutual check. We are also grateful to Nikolay Bogachev for his interest and discussion about the results, and noting the missing of a hyperparallel distance data and some textual mistakes
 in the first Arxiv version of [1]. The computations throughout this paper are performed on a cluster of server of PARATERA, engrid12, line priv para (CPU:Intel(R) Xeon(R) Gold 5218 16 Core v5@2.3GHz).
 
-## Citation
+### Citation
 @misc{GeoTopChrist2023HCPdm,\
   author = {Jiming Ma and Fangting Zheng},\
   title = {HCPdm: enumeration of hyperbolic Coxeter d-polytopes with m facets},\
