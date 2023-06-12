@@ -1,10 +1,10 @@
-![](figures/head.png)
+![](figures/headT.png)
 
 # HCPdm: Clssification of hyperbolic Coxeter d-polytopes with m facets
 
 ## What is it?
 
-This project **HCPdm** is for classifying **d**-dimensional **H**yperbolic **C**oxeter **P**olytopes with **m** facets. 
+This project <font color="#dd0000">**HCPdm**</font> is for classifying **d**-dimensional **H**yperbolic **C**oxeter **P**olytopes with **m** facets. 
 So far, we have completed the computation about compact hyperbolic Coxeter 4-polytopes/5-polytopes with 8/9 facets 
 (realized by module chcp48 and chcp59, respectively). <!--and all the hyperbolic Coxeter 4-polytopes with 7 facets (realized by module hcp47)-->
 The main results are as follows:
