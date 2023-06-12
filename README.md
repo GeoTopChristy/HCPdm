@@ -1,6 +1,6 @@
 ![](figures/headT.png)
 
-# HCPdm: Clssification of hyperbolic Coxeter d-polytopes with m facets
+# HCPdm: Classification of hyperbolic Coxeter d-polytopes with m facets
 
 ## What is it?
 
