@@ -73,7 +73,7 @@ For example, in the chcp59 case, we adopt the following remakes.
 And the **IN** and **NOT IN** conditions are realized by the **saving** and **killing** functions in our code.
 
 
-<div align="center"><img src="figures/remarks.png" alt="drawing" width="600"/></div>
+<div align="center"><img src="figures/rmks.png" alt="drawing" width="600"/></div>
 
 Note that these conditions are inserted in “appropriate layer” * (refer to the corresponding paper for the detail explanation) and the symmetric group of the polytopes are factored out when the pastes are finished. The matrices (or vectors) after all these conditions (metric restrictions and symmetry equivalence) are called **SEILper-potential matrices (or vectors*)** of certain combinatorial types.
 
