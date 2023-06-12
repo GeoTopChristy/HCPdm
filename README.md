@@ -1,8 +1,8 @@
 ![](figures/headT.png)
-
+<font face="New Times Roman">
 # HCPdm: Classification of hyperbolic Coxeter d-polytopes with m facets
 
-## What is it?
+## What is it? 
 
 This project <font color="#dd0000">**HCPdm**</font> is for classifying **d**-dimensional **H**yperbolic **C**oxeter **P**olytopes with **m** facets. 
 So far, we have completed the computation about compact hyperbolic Coxeter 4-polytopes/5-polytopes with 8/9 facets 
@@ -73,7 +73,7 @@ For example, in the chcp59 case, we adopt the following remakes.
 And the **IN** and **NOT IN** conditions are realized by the **saving** and **killing** functions in our code.
 
 
-<div align="center"><img src="figures/rmks.png" alt="drawing" width="600"/></div>
+<div align="center"><img src="figures/rmks.png" alt="drawing" width="550"/></div>
 
 Note that these conditions are inserted in “appropriate layer” * (refer to the corresponding paper for the detail explanation) and the symmetric group of the polytopes are factored out when the pastes are finished. The matrices (or vectors) after all these conditions (metric restrictions and symmetry equivalence) are called **SEILper-potential matrices (or vectors*)** of certain combinatorial types.
 
@@ -152,4 +152,4 @@ in the first Arxiv version of [1]. The computations throughout this paper are pe
 This updating page is created and maintained by [Fangting ZHENG](https://www.xjtlu.edu.cn/en/study/departments/school-of-mathematics-and-physics/pure-mathematics/department-staff/academic-staff/staff/fangting-zheng). Suggestions, collaboration or other comments are very welcome
 
 
-
+</font>
