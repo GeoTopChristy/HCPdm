@@ -6,7 +6,7 @@
 
 This project <font color="#dd0000">**HCPdm**</font> is for classifying **d**-dimensional **H**yperbolic **C**oxeter **P**olytopes with **m** facets. 
 So far, we have completed the computation about compact hyperbolic Coxeter 4-polytopes/5-polytopes with 8/9 facets 
-(realized by module chcp48 and chcp59, respectively). <!--and all the hyperbolic Coxeter 4-polytopes with 7 facets (realized by module hcp47)-->
+(realized by module **chcp48** and **chcp59**, respectively). <!--and all the hyperbolic Coxeter 4-polytopes with 7 facets (realized by module hcp47)-->
 The main results are as follows:
 
 >There are exactly **348** compact hyperbolic Coxeter 4-polytopes with 8 facets.[1]
@@ -97,7 +97,7 @@ d)	This approach has been Python-programmed on a PARATERA server cluster.
 
 ### 4. Signature obstruction
 
-This approach has been Mathematica-programmed. We provide in the folder SigPart the notebook for <!--P_17 in the family of HCP48, -->P_322 in the family of **HCP59** as an example. The strategies are more complicated in the **HCP48** case for the amount of SEILper matrices even reach 325,957 over some polytope. See Section 6 in corresponding paper for details.
+This approach has been Mathematica-programmed. Due to the size of documents, we provide seperately at [SigPart](https://pan.baidu.com/s/1YE8Gg6j6vV0qPvqOagtGQw?pwd=3dfn) the notebooks for the polytope P<sub>17</sub> in the family of **chcp48**, and the P<sub>322</sub> in the family of **chcp59** as examples. The strategies are more complicated in the **HCP48** case for the amount of SEILper matrices even reach 325,957 over some polytope. See Section 6 in corresponding paper for details.
 
 # How to use
 run the main.py in pyFile.
