@@ -43,7 +43,7 @@ which is calculated right after the round 1* of the pasting.
 In the directories of **./output/P9_322** and **./output/P8_17**, the files **P9_322_per.txt** and **P8_17_per.txt** store the desired permutation subgroups, respectively, as illustrations. 
 
 
-<div align="center"><img src="figures/dataP322.png" alt="drawing" width="550"/></div>
+<div align="center"><img src="figures/DP322.png" alt="drawing" width="550"/></div>
 
 
 <sub>*</sub> vertex flag means the tuples of facets that incident at vertices.
