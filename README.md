@@ -45,6 +45,11 @@ In the directories of **./output/P9_322** and **./output/P8_17**, the files **P9
 
 <div align="center"><img src="figures/dataP322.png" alt="drawing" width="550"/></div>
 
+
+<sub>*</sub> vertex flag means the tuples of facets that incident at vertices.
+
+<sub>*</sub> see Remark c) for the explanation about rounds.
+
 ## 2. Library preparation:
 
 We prepare some libraries for the step 3 of refined pasting. The libraries need are stated in corresponding papers. For example, the libraries need for **chcp59** are
