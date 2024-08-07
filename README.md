@@ -6,13 +6,14 @@
 
 This project <font color="#dd0000">**HCPdm**</font> is for classifying **d**-dimensional **H**yperbolic **C**oxeter **P**olytopes with **m** facets. 
 So far, we have completed the computation about compact hyperbolic Coxeter 4-polytopes/5-polytopes with 8/9 facets 
-(realized by module **chcp48** and **chcp59**, respectively). <!--and all the hyperbolic Coxeter 4-polytopes with 7 facets (realized by module hcp47)-->
+(realized by module **chcp48** and **chcp59**, respectively), and all the hyperbolic Coxeter 4-polytopes with 7 facets (realized by module **hcp47**).
 The main results are as follows:
 
 >There are exactly **348** compact hyperbolic Coxeter 4-polytopes with 8 facets.[1]
 > 
 >There are exactly **51** compact hyperbolic Coxeter 5-polytopes with 9 facets.[2]
-<!--There are exactly **275** hyperbolic Coxeter 4-polytopes with 7 facets.[3]-->
+>
+>There are exactly **331** hyperbolic Coxeter 4-polytopes with 7 facets.[3]
 
 ## How it works
 
@@ -52,9 +53,9 @@ In the directories of **./output/P9_322** and **./output/P8_17**, the files **P9
 
 ### 2. Library preparation:
 
-We prepare some libraries for the step 3 of refined pasting. The libraries need are stated in corresponding papers. For example, the libraries need for **chcp59** are
+We prepare some libraries for the step 3 of refined pasting. The libraries need are stated in corresponding papers. For example, the libraries need for **hcp47** are
 
-<div align="center"><img src="figures/library.png" alt="drawing" width="600"/></div>
+<div align="center"><img src="figures/library47.png" alt="drawing" width="600"/></div>
 
 
 All the possibly needed libraries are generated beforehand and saved in the folder **ToolPolytope**.
@@ -109,19 +110,25 @@ import itertools
 import functools
 import chcp48
 import chcp59
+import hcp47
+import os
 
-if __name__ == '__main__':
+if __name__ == '__main__': # Run one of the three cases, comment out the others.
     # chcp48 case
     Vert = [[1, 2, 4, 6], [1, 3, 4, 6], [2, 3, 4, 6], [1, 2, 5, 6], [1, 3, 5, 6], [2, 3, 5, 6],
             [1, 2, 5, 7], [1, 3, 5, 7], [1, 2, 4, 7], [1, 3, 4, 7], [2, 3, 5, 8], [2, 5, 7, 8],
-            [3, 5, 7, 8], [2, 3, 4, 8], [2, 4, 7, 8], [3, 4, 7, 8]]  
+            [3, 5, 7, 8], [2, 3, 4, 8], [2, 4, 7, 8], [3, 4, 7, 8]]
     # input vertex flag directly, and the above is the one of P8_17
     chcp48.run48(Vert)
-    
+
     # chcp59 case
-    num = 322 # input the number of polytope and here we test on polytope P_322
-    flag = 2  # flag=2 means basis yes, flag=1 means basis no
-    chcp59.run59(num,flag)
+    # input the number of polytope in the script chcp59.py, the default value is num = 322.
+    # input the number of flag,  flag=2 means basis yes, flag=1 means basis no, the default value is flag =2.
+    chcp59.py
+
+    # hcp47 case
+    # revise the value of "num" in hcp47.py and run this script, "num" is the label of the polytope and the default value is num=1.
+    hcp47.py
 ```
 
 ### References
@@ -129,14 +136,12 @@ The implementation follows the structure introduced in our papers as follows
 >[1] Compact hyperbolic Coxeter 4-polytopes with eight facets [arxiv.org/2201.00154.](https://arxiv.org/pdf/2201.00154.pdf)
 > 
 >[2] Compact hyperbolic Coxeter 5-polytopes with nine facets, [arxiv.org/2203.16049.](https://arxiv.org/pdf/2203.16049.pdf)
-<!--[3] Hyperbolic Coxeter 4-polytopes with seven facets. Experiments are finished and the paper is coming soon.-->
+>
+>[3] Finite-volume hyperbolic Coxeter 4-polytopes with seven facets, [arxiv.org/2401.13698.](https://arxiv.org/pdf/2401.13698.pdf)
 
 ### Acknowledgment
 
-We would like to thank Amanda Burcroff for communicating with us about her result
-after we posted our preprint [1]. She pointed out several confusing drawing typos in the first arXiv version of [1].The computations is pretty delicate and complex,
-and the list now is much more convincing due to the mutual check. We are also grateful to Nikolay Bogachev for his interest and discussion about the results, and noting the missing of a hyperparallel distance data and some textual mistakes
-in the first Arxiv version of [1]. The computations throughout this paper are performed on a cluster of server of PARATERA, engrid12, line priv para (CPU:Intel(R) Xeon(R) Gold 5218 16 Core v5@2.3GHz).
+We would like to thank Amanda Burcroff for communicating with us about her result after we posted our preprint [1]. She pointed out several confusing drawing typos in the first arXiv version of [1].The computations is pretty delicate and complex, and the list now is much more convincing due to the mutual check. We are also grateful to Nikolay Bogachev for his interest and discussion about the results, and noting the missing of a hyperparallel distance data and some textual mistakes in the first Arxiv version of [1]. The computations throughout this paper are performed on a cluster of server of PARATERA, engrid12, line priv para (CPU:Intel(R) Xeon(R) Gold 5218 16 Core v5@2.3GHz).
 
 ### Citation
 @misc{GeoTopChrist2023HCPdm,\
