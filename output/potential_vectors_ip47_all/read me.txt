@@ -1,0 +1,5 @@
+In the files,
+
+the distance variables a, b, c, etc., are represented by 18, 28, 38, etc;
+
+and the angle variables y_1, y_2, y_3, etc., are represented by 17, 27, 37, etc..
